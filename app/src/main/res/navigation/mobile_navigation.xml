@@ -33,7 +33,7 @@
         tools:layout="@layout/fragment_about" />
     <fragment
         android:id="@+id/nav_settings"
-        android:name="com.example.navigationdrawer.SettingsFragment"
+        android:name="com.example.navigationdrawer.ui.settings.SettingFragment"
         android:label="@string/menu_settings"
         tools:layout="@layout/fragment_settings" />
     <activity
