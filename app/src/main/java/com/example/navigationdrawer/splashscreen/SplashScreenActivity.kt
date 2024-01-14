@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import com.example.navigationdrawer.MainActivity
 import com.example.navigationdrawer.R
+import com.example.navigationdrawer.ui.signup.SignupActivity
 
 class SplashScreenActivity : AppCompatActivity() {
 
@@ -17,7 +18,7 @@ class SplashScreenActivity : AppCompatActivity() {
 
         // Using Handler to delay the start of the next activity
         Handler().postDelayed({
-            val intent = Intent(this@SplashScreenActivity, MainActivity::class.java)
+            val intent = Intent(this@SplashScreenActivity, SignupActivity::class.java)
             startActivity(intent)
             finish()
         }, SPLASH_TIME_OUT)

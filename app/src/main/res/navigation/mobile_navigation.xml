@@ -46,6 +46,4 @@
         android:name="com.example.navigationdrawer.ui.upload.Upload_Fragment"
         android:label="fragment_upload_"
         tools:layout="@layout/fragment_upload_" />
-
-
 </navigation>

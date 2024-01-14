@@ -49,6 +49,8 @@ dependencies {
     // Cirle & Glice
     implementation("de.hdodenhof:circleimageview:3.1.0")
     implementation("com.github.bumptech.glide:glide:4.15.1")
+    // Cardview
+    implementation("androidx.cardview:cardview:1.0.0")
 
     // Retorfit
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
