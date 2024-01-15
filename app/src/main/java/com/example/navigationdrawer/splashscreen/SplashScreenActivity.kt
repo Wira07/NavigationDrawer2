@@ -4,23 +4,37 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.view.animation.Animation
 import com.example.navigationdrawer.MainActivity
 import com.example.navigationdrawer.R
+import com.example.navigationdrawer.databinding.ActivitySplashScreenBinding
 import com.example.navigationdrawer.ui.signup.SignupActivity
+import com.example.navigationdrawer.ui.signup.StartedActivity
 
 class SplashScreenActivity : AppCompatActivity() {
 
-    private val SPLASH_TIME_OUT: Long = 2000 // 2 seconds
+    private lateinit var binding: ActivitySplashScreenBinding
+
+    private val splashTimeOut: Long = 3000
+    private lateinit var topAnim: Animation
+    private lateinit var bottomAnim: Animation
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash_screen)
+        binding = ActivitySplashScreenBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        // Using Handler to delay the start of the next activity
+        // Animations
+        topAnim = android.view.animation.AnimationUtils.loadAnimation(this, R.anim.top_animation)
+        bottomAnim = android.view.animation.AnimationUtils.loadAnimation(this, R.anim.bottom_animation)
+
+        binding.gambar.startAnimation(topAnim)
+
         Handler().postDelayed({
-            val intent = Intent(this@SplashScreenActivity, SignupActivity::class.java)
+            val intent = Intent(this, StartedActivity::class.java)
             startActivity(intent)
             finish()
-        }, SPLASH_TIME_OUT)
+        }, splashTimeOut)
+
     }
 }

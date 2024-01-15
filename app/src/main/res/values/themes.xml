@@ -19,6 +19,12 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="ColorFont">
+        <item name="android:textColor">@color/purple_700</item>
+        <item name="fontFamily">@font/wira_sukma</item>
+        <item name="android:textSize">40dp</item>
+    </style>
+
     <style name="Theme.NavigationDrawer.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.NavigationDrawer.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
