@@ -11,6 +11,12 @@
     <string name="email">Wiralodraputra07@gmail.com</string>
     <string name="dark_mode">Dark Mode</string>
     <string name="signup">Signup</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="logout">Logout</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
@@ -23,6 +29,7 @@
     <string name="descriptionStory">Story Description</string>
     <string name="icon_map_pin">Icon map pin</string>
     <string name="yourLocation">Your Location</string>
+    <string name="login">Login</string>
 
     <string name="wira">Wira Sukma Saputra</string>
     <string name="wiralodrasaputra07gmail.com">wiralodrasaputra07@gmail.com</string>

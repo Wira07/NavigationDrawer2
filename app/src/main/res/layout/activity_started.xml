@@ -10,7 +10,7 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/login"
+        android:src="@drawable/wira_shop_remove"
         android:transitionName="gambar_1"
         app:layout_constraintBottom_toBottomOf="@+id/text1"
         app:layout_constraintEnd_toEndOf="parent"

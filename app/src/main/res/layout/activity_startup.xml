@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="30dp"
+    tools:context=".ui.signup.loginsignup.StartupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/wira_shop_remove"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wira"
+            android:textSize="36sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/wira_sukma"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:text="@string/pemula"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_name_email"
+                android:text="@string/login"
+                android:onClick="callLogin"
+                android:transitionName="transition_login"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/signupButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/signup"
+                android:background="@drawable/shape_name_email"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wira"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textSize="15dp"
+            android:layout_marginTop="90dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -15,6 +15,9 @@
         android:theme="@style/Theme.NavigationDrawer"
         tools:targetApi="31">
         <activity
+            android:name=".ui.signup.loginsignup.StartupActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.signup.StartedActivity"
             android:exported="false" />
         <activity

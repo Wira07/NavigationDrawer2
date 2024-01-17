@@ -8,16 +8,21 @@
 
     <ImageView
         android:id="@+id/gambar"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="500dp"
+        android:layout_height="400dp"
         android:layout_margin="90dp"
-        android:src="@drawable/union" />
+        android:src="@drawable/wira_shop_remove"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:layout_width="123dp"
-        android:layout_height="18dp"
-        android:text="@string/wira"
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:gravity="center"
+        android:text="@string/wira"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

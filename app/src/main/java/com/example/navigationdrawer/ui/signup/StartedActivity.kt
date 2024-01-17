@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.animation.Animation
 import com.example.navigationdrawer.R
 import com.example.navigationdrawer.databinding.ActivityStartedBinding
+import com.example.navigationdrawer.ui.signup.loginsignup.StartupActivity
 
 class StartedActivity : AppCompatActivity() {
 
@@ -28,7 +29,7 @@ class StartedActivity : AppCompatActivity() {
         binding.btnNavigate.startAnimation(bottomAnim)
 
         binding.btnNavigate.setOnClickListener {
-            val intent = Intent(this, SignupActivity::class.java)
+            val intent = Intent(this, StartupActivity::class.java)
             intent.putExtra("kunci", "Nilai yang akan Anda kirim")
             startActivity(intent)
         }
