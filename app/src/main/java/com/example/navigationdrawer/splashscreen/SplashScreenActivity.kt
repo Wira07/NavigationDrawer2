@@ -29,6 +29,7 @@ class SplashScreenActivity : AppCompatActivity() {
         bottomAnim = android.view.animation.AnimationUtils.loadAnimation(this, R.anim.bottom_animation)
 
         binding.gambar.startAnimation(topAnim)
+        binding.textView2.startAnimation(bottomAnim)
 
         Handler().postDelayed({
             val intent = Intent(this, StartedActivity::class.java)

@@ -8,6 +8,7 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="i_have">AlReady have an account? Login</string>
     <string name="email">Wiralodraputra07@gmail.com</string>
     <string name="dark_mode">Dark Mode</string>
     <string name="signup">Signup</string>
@@ -16,7 +17,11 @@
     <string name="remember_me">Remember Me</string>
     <string name="forget_password">Forget Password</string>
     <string name="create_account">Create Account</string>
+    <string name="welcome">Welcome </string>
     <string name="logout">Logout</string>
+    <string name="hello">Hello there, Welcome Back</string>
+    <string name="signin">Sign In To Continue</string>
+
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>

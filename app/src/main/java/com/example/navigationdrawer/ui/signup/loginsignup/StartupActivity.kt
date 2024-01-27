@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityOptionsCompat
 import com.example.navigationdrawer.R
 import com.example.navigationdrawer.databinding.ActivityStartupBinding
+import com.example.navigationdrawer.ui.signup.RegistrasiActivity
 import com.example.navigationdrawer.ui.signup.SignupActivity
 
 class StartupActivity : AppCompatActivity() {
@@ -39,7 +40,7 @@ class StartupActivity : AppCompatActivity() {
 //        }
 //
         binding.signupButton.setOnClickListener {
-            val signupIntent = Intent(this@StartupActivity, SignupActivity::class.java)
+            val signupIntent = Intent(this@StartupActivity, RegistrasiActivity::class.java)
             startActivity(signupIntent)
         }
     }
