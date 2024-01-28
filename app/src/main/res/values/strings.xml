@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Wira Sukma Saputra</string>
-    <string name="heroes_name">Nama Seafood</string>
+    <string name="android_developer">Android Developer UI UX Designer</string>
+    <string name="heroes_name">Nama Shopping</string>
     <string name="description">Deskripsi</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -11,6 +12,7 @@
     <string name="i_have">AlReady have an account? Login</string>
     <string name="email">Wiralodraputra07@gmail.com</string>
     <string name="dark_mode">Dark Mode</string>
+    <string name="update">Update Profile</string>
     <string name="signup">Signup</string>
     <string name="enter_username">Enter Username</string>
     <string name="enter_password">Enter Password</string>
@@ -18,9 +20,13 @@
     <string name="forget_password">Forget Password</string>
     <string name="create_account">Create Account</string>
     <string name="welcome">Welcome </string>
+    <string name="teknik">Teknik Informatika</string>
+    <string name="uniku">Universitas Kuningan</string>
     <string name="logout">Logout</string>
     <string name="hello">Hello there, Welcome Back</string>
     <string name="signin">Sign In To Continue</string>
+    <string name="github">https://github.com/Wira07</string>
+    <string name="linkedn">https://www.linkedin.com/in/wira-sukma-saputra/</string>
 
 
     <string name="menu_home">Home</string>
@@ -49,7 +55,7 @@
     <string name="Enter_Your_Password">Enter Your Password</string>
     <string name="error_email_is_not_valid">Email is not valid</string>
     <string name="Categories">Categories</string>
-    <string name="pemula">Aplikasi Seafood Versi Lite Pengembangan</string>
+    <string name="pemula">Aplikasi Shop E-COMMERCE</string>
     <string name="get_started">Get Started</string>
     <string name="about">About</string>
 

@@ -47,14 +47,14 @@
             android:layout_height="wrap_content"
             android:transitionName="logo_username"
             android:id="@+id/username"
-            android:background="@drawable/shape_bulat"
             android:hint="username"
-
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@android:color/white"/>
+                android:inputType="text"
+                />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -64,15 +64,13 @@
             android:id="@+id/password"
             android:transitionName="logo_password"
             android:hint="password"
-            android:background="@drawable/shape_bulat"
             app:passwordToggleEnabled="true"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:textColor="@android:color/white"/>
+                android:inputType="textPassword"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
