@@ -9,20 +9,25 @@
     tools:context=".ui.signup.RegistrasiActivity">
 
     <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:id="@+id/gambar_1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:transitionName="gambar_1"
         android:layout_gravity="center"
         android:src="@drawable/wira_shop_remove"/>
 
     <TextView
+        android:id="@+id/logo_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/welcome"
         android:layout_gravity="center"
+        android:transitionName="logo Text"
         android:textSize="40dp"
         android:fontFamily="@font/wira_sukma" />
 
     <TextView
+        android:id="@+id/slogan_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello"
@@ -113,19 +118,24 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/buttonPanel"
+        android:id="@+id/buttonSign"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/login"
         android:layout_marginTop="10dp"
+        android:transitionName="botton_tren"
         android:background="@drawable/shape_bulat" />
 
-<!--    <Button-->
-<!--        android:id="@+id/buttonIhave"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="@string/i_have"-->
-<!--        android:layout_marginTop="10dp"-->
-<!--        android:background="@drawable/shape_bulat" />-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonIhave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/i_have"
+        android:textSize="12dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_name_email"
+        android:transitionName="login_signup_tren"
+        android:textColor="@color/black">
+    </androidx.appcompat.widget.AppCompatButton>
 
 </LinearLayout>
