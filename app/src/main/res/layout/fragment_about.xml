@@ -6,6 +6,7 @@
     android:orientation="vertical">
 
     <RelativeLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:padding="20dp"
@@ -32,6 +33,7 @@
             android:layout_marginLeft="10dp"/>
 
         <TextView
+            android:id="@+id/android_developer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:includeFontPadding="false"
@@ -52,6 +54,7 @@
         android:padding="20dp">
 
         <com.google.android.material.card.MaterialCardView
+            android:id="@+id/container_card1"
             android:layout_width="0dp"
             android:layout_height="125dp"
             android:layout_margin="10sp"
@@ -60,6 +63,7 @@
             android:layout_weight="1">
 
             <RelativeLayout
+                android:id="@+id/card_1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="5dp">
@@ -75,29 +79,30 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:includeFontPadding="false"
-                    android:text="@string/uniku"
                     android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/campus"
                     android:textColor="@color/white"
-                    android:textSize="15sp" />
+                    android:textSize="13sp" />
 
                 <TextView
                     android:id="@+id/fkom"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="15sp"
+                    android:textSize="13sp"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:includeFontPadding="false"
                     android:layout_below="@+id/uniku"
                     android:layout_centerHorizontal="true"
-                    android:text="@string/teknik"/>
+                    android:text="@string/uniku"/>
                 
             </RelativeLayout>
 
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
+            android:id="@+id/container_card2"
             android:layout_width="0dp"
             android:layout_height="125dp"
             android:layout_margin="10sp"
@@ -106,6 +111,7 @@
             android:layout_weight="1">
 
             <RelativeLayout
+                android:id="@+id/card_2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="5dp">
@@ -121,9 +127,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:includeFontPadding="false"
-                    android:text="@string/uniku"
                     android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/jurusan"
                     android:textColor="@color/white"
                     android:textSize="15sp" />
 
@@ -131,7 +137,7 @@
                     android:id="@+id/linkedn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="15sp"
+                    android:textSize="13sp"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:includeFontPadding="false"

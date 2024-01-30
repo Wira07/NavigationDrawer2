@@ -19,6 +19,8 @@
             android:layout_height="300dp"
             android:src="@drawable/wira_shop_remove"/>
 
+
+
         <TextView
             android:id="@+id/Wira_Sukma_Saputra"
             android:layout_width="wrap_content"
