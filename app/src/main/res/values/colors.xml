@@ -9,6 +9,8 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#222525</color>
     <color name="grey">#878686</color>
+    <color name="orange">#EF8120</color>
+    <color name="blue">#1C486F</color>
 
     <style name="ProgressBarStyleWhite">
         <item name="colorAccent">@color/white</item>

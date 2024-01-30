@@ -28,12 +28,13 @@
     <string name="hello">Hello there, Welcome Back</string>
     <string name="signin">Sign In To Continue</string>
     <string name="github">https://github.com/Wira07</string>
+    <string name="github_user">Github</string>
     <string name="linkedn">https://www.linkedin.com/in/wira-sukma-saputra/</string>
 
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_github">GithubUser</string>
     <string name="btnPost">Share Story</string>
     <string name="post_as">Share story as </string>
     <string name="storyImageDesc">Story Image Desc</string>

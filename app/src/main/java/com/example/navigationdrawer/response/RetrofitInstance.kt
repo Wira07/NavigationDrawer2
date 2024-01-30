@@ -5,15 +5,13 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitInstance {
-    private const val BASE_URL = "https://api.github.com/search/users?q=Wira07"
 
-    val instance: Api by lazy {
-        val retrofit = Retrofit.Builder()
-            .baseUrl(BASE_URL)
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
+    private const val BASE_URL= "https://api.github.com/"
 
-        retrofit.create(Api::class.java)
-    }
+    val retrofit = Retrofit.Builder()
+        .baseUrl(BASE_URL)
+        .addConverterFactory(GsonConverterFactory.create())
+        .build()
+
+    val apiInstance = retrofit.create(Api::class.java)
 }
-

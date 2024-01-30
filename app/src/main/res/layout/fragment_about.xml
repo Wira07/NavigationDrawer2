@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/orange"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -10,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:padding="20dp"
-        android:background="@color/purple_700">
+        android:background="@color/blue">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profile_image"
@@ -59,7 +60,7 @@
             android:layout_height="125dp"
             android:layout_margin="10sp"
             app:cardElevation="10dp"
-            app:cardBackgroundColor="@color/purple_700"
+            app:cardBackgroundColor="@color/blue"
             android:layout_weight="1">
 
             <RelativeLayout
@@ -107,7 +108,7 @@
             android:layout_height="125dp"
             android:layout_margin="10sp"
             app:cardElevation="10dp"
-            app:cardBackgroundColor="@color/purple_700"
+            app:cardBackgroundColor="@color/blue"
             android:layout_weight="1">
 
             <RelativeLayout
@@ -168,6 +169,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/app_name"
+                android:textColor="@color/white"
                 android:drawableLeft="@drawable/ic_person"
                 android:inputType="text">
 
@@ -186,6 +188,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/github"
+                android:textColor="@color/white"
                 android:drawableLeft="@drawable/github2"
                 android:inputType="text">
 
@@ -203,6 +206,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:text="@string/linkedn"
                 android:drawableLeft="@drawable/linkedin"
                 android:inputType="text">
@@ -211,14 +215,15 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/botton"
         android:text="@string/update"
-        android:background="@drawable/shape_bulat"
+        android:background="@drawable/shape_name_email"
         android:layout_marginTop="15dp"
+        android:textColor="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    </Button>
+    </androidx.appcompat.widget.AppCompatButton>
 
     </LinearLayout>
 
