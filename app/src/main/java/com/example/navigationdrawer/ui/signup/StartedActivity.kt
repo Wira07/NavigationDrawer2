@@ -1,8 +1,10 @@
 package com.example.navigationdrawer.ui.signup
 
+import android.animation.ObjectAnimator
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.view.animation.Animation
 import com.example.navigationdrawer.R
 import com.example.navigationdrawer.databinding.ActivityStartedBinding
@@ -18,6 +20,7 @@ class StartedActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityStartedBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        playAnimation()
 
         // Animations
         topAnim = android.view.animation.AnimationUtils.loadAnimation(this, R.anim.top_animation)
@@ -34,4 +37,12 @@ class StartedActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+    private fun playAnimation() {
+        ObjectAnimator.ofFloat(binding.imageView, View.TRANSLATION_X, -30f, 30f).apply {
+            duration = 3000
+            repeatCount = ObjectAnimator.INFINITE
+            repeatMode = ObjectAnimator.REVERSE
+        }.start()
+    }
+
 }

@@ -1,5 +1,6 @@
 package com.example.navigationdrawer.ui.signup.loginsignup
 
+import android.animation.ObjectAnimator
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
@@ -23,6 +24,8 @@ class StartupActivity : AppCompatActivity() {
         binding = ActivityStartupBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        playAnimation()
+
         // Animations
         topAnim = android.view.animation.AnimationUtils.loadAnimation(this, R.anim.top_animation)
         bottomAnim = android.view.animation.AnimationUtils.loadAnimation(this, R.anim.bottom_animation)
@@ -44,6 +47,15 @@ class StartupActivity : AppCompatActivity() {
             startActivity(signupIntent)
         }
     }
+
+    private fun playAnimation() {
+        ObjectAnimator.ofFloat(binding.imageView, View.TRANSLATION_X, -50f, 50f).apply {
+            duration = 3000
+            repeatCount = ObjectAnimator.INFINITE
+            repeatMode = ObjectAnimator.REVERSE
+        }.start()
+    }
+
     fun callLogin(view: View) {
         val intent = Intent(applicationContext, SignupActivity::class.java)
 

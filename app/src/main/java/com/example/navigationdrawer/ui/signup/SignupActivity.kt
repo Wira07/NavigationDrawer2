@@ -1,14 +1,19 @@
 package com.example.navigationdrawer.ui.signup
 
+import android.animation.AnimatorSet
+import android.animation.ObjectAnimator
 import android.content.Intent
 import android.os.Bundle
 import android.util.Patterns
+import android.view.View
 import android.view.animation.AnimationUtils
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.navigationdrawer.MainActivity
 import com.example.navigationdrawer.R
 import com.example.navigationdrawer.databinding.ActivitySignupBinding
+import com.google.android.material.animation.AnimatorSetCompat.playTogether
+import kotlinx.coroutines.NonCancellable.start
 
 class SignupActivity : AppCompatActivity() {
 
@@ -18,7 +23,7 @@ class SignupActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySignupBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        playAnimation()
         val topAnimPair = Pair(binding.gambar1, R.anim.top_animation)
         val logoNamePair = Pair(binding.logoName, R.anim.top_animation)
         val sloganNamePair = Pair(binding.sloganName, R.anim.top_animation)
@@ -58,22 +63,23 @@ class SignupActivity : AppCompatActivity() {
         }
     }
 
+    private fun playAnimation() {
+        ObjectAnimator.ofFloat(binding.gambar1, View.TRANSLATION_X, -30f, 30f).apply {
+            duration = 3000
+            repeatCount = ObjectAnimator.INFINITE
+            repeatMode = ObjectAnimator.REVERSE
+        }.start()
+    }
+
     private fun validateForm(): Boolean {
-        // Mendapatkan nilai dari setiap bidang isian
         val username = binding.username.editText?.text.toString().trim()
         val password = binding.password.editText?.text.toString().trim()
-
-        // Memeriksa apakah ada bidang isian yang kosong
         if (username.isEmpty() || password.isEmpty()) {
             showMessage("Mohon lengkapi semua bidang isian.")
             return false
         }
-
-        // Anda dapat menambahkan validasi tambahan sesuai kebutuhan (contoh: panjang kata sandi, dll.)
-        // Jika semua validasi berhasil, kembalikan true
         return true
     }
-
     // Fungsi untuk menampilkan pesan Toast
     private fun showMessage(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
