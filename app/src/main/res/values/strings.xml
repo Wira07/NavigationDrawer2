@@ -3,6 +3,12 @@
     <string name="android_developer">Android Developer UI UX Designer</string>
     <string name="heroes_name">Nama Shopping</string>
     <string name="description">Deskripsi</string>
+    <string name="deskripsi_2">I am a UI UX Design novice who is excited to start a career in the world of user interface (UI) and user experience (UX) design. I recently graduated in design and have a basic understanding of
+        design principles and design elements such as typography, color, composition, and layout.
+Since learning about UI UX Design, I started to realize how important it is to prioritize user experience in every design project. I always strive to create solutions that are easy to use and intuitive for the end user.
+I have developed skills in using design software such as Adobe Photoshop, Adobe and Figma. In addition, I also understand the importance of user research to identify user needs and preferences in the design process.
+I have a passion for continuously learning and collaborating with other design professionals, web developers, and product managers to create superior products and add value to users.
+</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>

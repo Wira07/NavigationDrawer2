@@ -21,6 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/welcome"
+        android:textColor="@color/blue"
         android:layout_gravity="center"
         android:transitionName="logo Text"
         android:textSize="40dp"
@@ -135,7 +136,7 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/shape_name_email"
         android:transitionName="login_signup_tren"
-        android:textColor="@color/black">
+        android:textColor="@color/white">
     </androidx.appcompat.widget.AppCompatButton>
 
 </LinearLayout>
