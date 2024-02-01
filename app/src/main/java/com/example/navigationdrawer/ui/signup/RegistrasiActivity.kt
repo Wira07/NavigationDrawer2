@@ -1,9 +1,11 @@
 package com.example.navigationdrawer.ui.signup
 
+import android.animation.ObjectAnimator
 import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
 import android.util.Patterns
+import android.view.View
 import android.view.animation.AnimationUtils
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
@@ -19,6 +21,8 @@ class RegistrasiActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityRegistrasiBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        playAnimation()
 
         val pairs = arrayOf(
             Pair(binding.gambar1, R.anim.top_animation),
@@ -45,6 +49,13 @@ class RegistrasiActivity : AppCompatActivity() {
                 showMessage()
             }
         }
+    }
+    private fun playAnimation() {
+        ObjectAnimator.ofFloat(binding.gambar1, View.TRANSLATION_X, -50f, 50f).apply {
+            duration = 3000
+            repeatCount = ObjectAnimator.INFINITE
+            repeatMode = ObjectAnimator.REVERSE
+        }.start()
     }
     private fun validateForm(): Boolean {
         // Mendapatkan nilai dari setiap bidang isian

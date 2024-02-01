@@ -186,13 +186,13 @@
                     <ImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:src="@drawable/wira_shop_remove" />
+                        android:src="@drawable/gopay" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="Donasi Kemanusiaan"
+                        android:text="Bayar Pake Gopay"
                         android:textColor="@color/black"
                         android:textStyle="bold" />
 
@@ -224,13 +224,13 @@
                     <ImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:src="@drawable/wira_shop_remove" />
+                        android:src="@drawable/bri" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="Donasi Tanaman"
+                        android:text="Bayar Pake Bank BRI"
                         android:textColor="@color/black"
                         android:textStyle="bold" />
 
@@ -269,13 +269,13 @@
                     <ImageView
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:src="@drawable/wira_shop_remove" />
+                        android:src="@drawable/dana" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="Riwayat Donasi"
+                        android:text="Bayar Pake Dana"
                         android:textColor="@color/black"
                         android:textStyle="bold" />
 
