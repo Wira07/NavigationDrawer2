@@ -118,14 +118,17 @@
 
     </LinearLayout>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonSign"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/login"
+        android:textColor="@color/white"
         android:layout_marginTop="10dp"
         android:transitionName="botton_tren"
-        android:background="@drawable/shape_bulat" />
+        android:background="@drawable/shape_login_orange">
+
+    </androidx.appcompat.widget.AppCompatButton>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonIhave"
