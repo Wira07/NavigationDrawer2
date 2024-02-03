@@ -46,6 +46,9 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment-ktx:x.x.x")
     implementation("androidx.navigation:navigation-ui-ktx:x.x.x")
 
+    // view viger
+    implementation("androidx.viewpager2:viewpager2:1.0.0")
+
     // Cirle & Glice
     implementation("de.hdodenhof:circleimageview:3.1.0")
     implementation("com.github.bumptech.glide:glide:4.16.0")

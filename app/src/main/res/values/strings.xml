@@ -25,6 +25,8 @@ I have a passion for continuously learning and collaborating with other design p
     <string name="remember_me">Remember Me</string>
     <string name="forget_password">Forget Password</string>
     <string name="create_account">Create Account</string>
+    <string name="tab_text_1">Gallery</string>
+    <string name="tab_text_2">Profile</string>
     <string name="welcome">Welcome </string>
     <string name="teknik">Teknik Informatika</string>
     <string name="jurusan">Jurusan</string>
@@ -36,8 +38,6 @@ I have a passion for continuously learning and collaborating with other design p
     <string name="github">https://github.com/Wira07</string>
     <string name="github_user">Github</string>
     <string name="linkedn">https://www.linkedin.com/in/wira-sukma-saputra/</string>
-
-
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_github">GithubUser</string>
@@ -50,7 +50,6 @@ I have a passion for continuously learning and collaborating with other design p
     <string name="icon_map_pin">Icon map pin</string>
     <string name="yourLocation">Your Location</string>
     <string name="login">Login</string>
-
     <string name="wira">Wira Sukma Saputra</string>
     <string name="wiralodrasaputra07gmail.com">wiralodrasaputra07@gmail.com</string>
     <string name="menu_cart">Cart</string>
@@ -68,10 +67,7 @@ I have a passion for continuously learning and collaborating with other design p
     <string name="get_started">Get Started</string>
     <string name="about">About</string>
     <string name="map">See Map</string>
-
-
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
