@@ -26,7 +26,10 @@ I have a passion for continuously learning and collaborating with other design p
     <string name="forget_password">Forget Password</string>
     <string name="create_account">Create Account</string>
     <string name="tab_text_1">Gallery</string>
-    <string name="tab_text_2">Profile</string>
+    <string name="tab_text_2">Home</string>
+    <string name="tab_text_3">Setting</string>
+    <string name="tab_text_4">Upload</string>
+    <string name="tab_text_5">Profile</string>
     <string name="welcome">Welcome </string>
     <string name="teknik">Teknik Informatika</string>
     <string name="jurusan">Jurusan</string>

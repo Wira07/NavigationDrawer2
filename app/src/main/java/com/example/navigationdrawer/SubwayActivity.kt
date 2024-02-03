@@ -12,7 +12,10 @@ class SubwayActivity : AppCompatActivity() {
         @StringRes
         private val TAB_TITLES = intArrayOf(
             R.string.tab_text_1,
-            R.string.tab_text_2
+            R.string.tab_text_2,
+            R.string.tab_text_3,
+            R.string.tab_text_4,
+            R.string.tab_text_5
         )
     }
 
@@ -33,6 +36,13 @@ class SubwayActivity : AppCompatActivity() {
             TabLayoutMediator(tabs, viewPager) { tab, position ->
                 tab.text = resources.getString(TAB_TITLES[position])
             }.attach()
+
+            // Menambahkan animasi untuk ViewPager2
+            viewPager.setPageTransformer { page, position ->
+                val normalizedPosition = Math.abs(Math.abs(position) - 1)
+                page.scaleY = normalizedPosition / 2 + 0.5f
+                page.alpha = normalizedPosition
+            }
         }
 
         supportActionBar?.elevation = 0f
